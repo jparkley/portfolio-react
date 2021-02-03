@@ -75,6 +75,110 @@ p.main-header-title {
   font-weight: 700;
 }
 
+.s-wrapper {
+  margin: 60px auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-column-gap: 45px;
+  row-gap: 40px;
+}
+
+.s-card {
+  background: white;
+  border-radius: 12px;
+  height: 320px;
+  width: 240px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+/* .s-card:hover {
+  transform: translateY(10px);
+} */
+.s-card:hover:before {
+  opacity: 1;
+}
+.s-card:hover .s-info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.s-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.s-card img {
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.s-card .s-info {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+.s-card .s-info h1 {
+  margin: 0px;
+}
+.s-card-subtitle {
+  color: #fccd97;
+}
+.s-card .s-info p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.s-card .s-info a {
+  color: white;
+  font-size: 15px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.s-card .s-info a:hover {
+  background: #ec8106;
+  color: black;
+}
+
+.s-card .s-info button {
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.s-card .s-info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+
 .main-container {
   max-width: 800px;
   margin: 40px auto;
