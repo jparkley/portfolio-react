@@ -75,6 +75,12 @@ p.main-header-title {
   font-weight: 700;
 }
 
+.intro-note {
+  color: #522525;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 .s-wrapper {
   margin: 60px auto;
   max-width: 1000px;
