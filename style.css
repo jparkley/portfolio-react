@@ -42,8 +42,8 @@ a:hover {
 }
 
 .main {
-  margin: 80px auto 20px;
-  padding: 20px;
+  margin: 60px auto 16px;
+  padding: 14px;
   text-align: center;
   z-index: 1;
 }
@@ -54,7 +54,7 @@ a:hover {
 }
 
 .main-header p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 6px auto 16px;
 }
 
